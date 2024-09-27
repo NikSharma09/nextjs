@@ -44,3 +44,21 @@ a {
 .active {
   color: red;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px 0;
+
+  li {
+    border-radius: 20px;
+    list-style: none;
+    padding: 10px;
+  }
+
+  li:hover {
+    background-color: lightgray;
+  }
+}
