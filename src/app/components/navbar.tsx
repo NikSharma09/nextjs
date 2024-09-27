@@ -8,7 +8,7 @@ export default function NavBarLink({ key, href, label }: { key: number, href: st
     const isActive = pathname === href ? "active" : "";
 
     return (
-        <li>
+        <li key={key}>
             <Link className={isActive} href={href}>
                 {label}
             </Link>

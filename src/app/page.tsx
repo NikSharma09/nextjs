@@ -2,6 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  if (true) {
+    throw new Error("This is a test error at the root level");
+  }
   return (
     <div className={styles.page}>
       <main className={styles.main}>
