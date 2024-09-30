@@ -23,12 +23,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  if (true) {
-    throw new Error("This is a test error at the root layout level");
-  }
+  // if (true) {
+  //   throw new Error("This is a test error at the root layout level");
+  // }
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <h1>Root Layout</h1>
         {children}
       </body>
     </html>
