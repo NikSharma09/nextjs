@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+
+$primary-color: #333;
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
+}
+
+.page-container {
+  display: flex;
+  color: $primary-color;
+
+  ul {
+    @include flex-center();
+
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px 5px;
+    }
+  }
+}

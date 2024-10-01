@@ -1,0 +1,19 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f29f9f;
+}
+
+.pageContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pageContainer li {
+  margin: 0.5rem;
+  padding: 20px 10px;
+  border: 1px solid blue;
+}
