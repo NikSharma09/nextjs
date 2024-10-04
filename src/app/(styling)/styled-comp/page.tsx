@@ -1,7 +1,18 @@
 "use client";
-
+import styled from "styled-components";
 import StyledComp1 from "../../components/StyledComp1";
 import StyledButton from "../../components/StyledButton";
+
+const NormalLink = styled.a`
+  color: blue;
+  text-decoration: underline;
+`;
+
+const FancyLink = styled(NormalLink)`
+  display: inline-block;
+  background-color: lightblue;
+  padding: 5px;
+`;
 
 export default function StyledComp() {
   return (
@@ -17,6 +28,10 @@ export default function StyledComp() {
       </p>
       <StyledButton btn-type="primary">Click me</StyledButton>
       <StyledButton btn-type="secondary">Cancel me</StyledButton>
+      <NormalLink href="https://styled-components.com/">
+        Styled Components
+      </NormalLink>
+      <FancyLink href="https://styled-components.com/">Fancy Link</FancyLink>
     </StyledComp1>
   );
 }

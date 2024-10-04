@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import GlobalStyles from "./GlobalStyles";
 
 export default function Home() {
   // if (true) {
@@ -10,7 +9,6 @@ export default function Home() {
   // }
   return (
     <>
-      <GlobalStyles />
       <div className={styles.page}>
         <main className={styles.main}>
           <Image

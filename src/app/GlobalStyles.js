@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     body {
-        background-color: red;
+        background-color: ${(props) => props.theme.secondary};
+        color: ${(props) => props.theme.primary};
     }
 `;
 

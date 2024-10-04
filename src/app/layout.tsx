@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Provider from "./Provider";
+import Header from "./components/Header";
 // import "./globals.scss";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -30,11 +32,14 @@ export default function RootLayout({
   // }
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <h1>Root Layout</h1>
-        {children}
-        <div className="pageContainer">Test me</div>
-      </body>
+      <Provider>
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          <Header />
+          <h1>Root Layout</h1>
+          {children}
+          <div className="pageContainer">Test me</div>
+        </body>
+      </Provider>
     </html>
   );
 }
